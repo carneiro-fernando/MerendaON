@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merenda ON</title>
+    <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="../controller/controller.js"></script>
+</head>
+
+<body>
+
+    <div class="index_header">
+        <img id="logo_img"
+            src="https://cdn0.iconfinder.com/data/icons/coffee-shop-44/64/breakfast_lunch_food_meal-512.png"
+            alt="MerendaON icon">
+
+        <div class="header_text">
+            <span style="font-weight: normal;">Merenda</span>
+            <span style="color: chartreuse;">On</span>
+        </div>
+
+        <div style="flex: 1;">
+            <img id="profile_img" src="https://github.com/carneiro-fernando.png" alt="User profile image">
+        </div>
+    </div>
+
+    <!-- Borda de teste:
+     style="border: solid 1px; border-color:  #ccc; background-color: #eee;" -->
+
+    <div class="form" >
+        <form>
+            <span>
+                <h1>Retirada de merenda:</h1>
+            </span>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="nome_input">Nome do responsável:</label>
+                </div>
+
+                <div class="col-75">
+                    <input type=text list="nome_input">
+                    <datalist id="nome_input">
+                        <option value="Fulano">
+                        <option value="Ciclano">
+                        <option value="Beltrano">
+                        <option value="José">
+                        <option value="Maria">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="qtd_input">Quantidade:</label>
+                </div>
+
+                <div class="col-75">
+                    <input type="number" id="qtd_input" name="qtd_input" min="1" max="20">
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-75">
+                    <input type="checkbox" id="to_another_checkbox" onclick="to_another_check_func()">
+                    <label for="to_another_checkbox">Retirou para outra pessoa?</label>
+                </div>
+            </div>
+
+            <div id="to_another">
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nome_input">Nome do outro responsável:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type=text list="nome_input">
+                        <datalist id="nome_input">
+                            <option value="Fulano">
+                            <option value="Ciclano">
+                            <option value="Beltrano">
+                            <option value="José">
+                            <option value="Maria">
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="qtd_input_terceiros">Quantidade:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type="number" id="qtd_input_terceiros" name="qtd_input_terceiros" min="1" max="20">
+                    </div>
+                </div>    
+            </div>
+
+            <input type="submit" value="submit" id="submit_button">
+        
+        </form>
+
+    </div>
+
+</body>
