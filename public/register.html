@@ -19,7 +19,7 @@
             src="https://cdn0.iconfinder.com/data/icons/coffee-shop-44/64/breakfast_lunch_food_meal-512.png"
             alt="MerendaON icon">
 
-        <div class="header_text">
+        <div class="index_header_text">
             <span style="font-weight: normal;">Merenda</span>
             <span style="color: chartreuse;">On</span>
         </div>
@@ -32,7 +32,7 @@
 
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Início</a>
+        <a href="./index.html" class="active">Início</a>
         <a href="#news">Cadastro</a>
         <a href="#contact">Consulta</a>
         <a href="#about">Cozinha</a>
@@ -49,50 +49,58 @@
                 <h1>Cadastro de responsável:</h1>
             </span>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="reg_name_input">Nome do responsável:</label>
+            <fieldset class="responsible">
+                <legend>Cadastrar responsável</legend>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reg_name_input">Nome do responsável:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type=text id="reg_name_input" placeholder="Digite o nome do responsável">
+                    </div>
                 </div>
 
-                <div class="col-75">
-                    <input type=text id="reg_name_input" placeholder="Digite o nome do responsável">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reg_doc_input">Documento:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type=text id="reg_doc_input" placeholder="Digite o CPF do responsável">
+                    </div>
                 </div>
-            </div>
+            </fieldset>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="reg_doc_input">Documento:</label>
-                </div>
+            <fieldset class="dependent">
+                <legend>Cadastrar aluno</legend>
 
-                <div class="col-75">
-                    <input type=text id="reg_doc_input" placeholder="Digite o CPF do responsável">
-                </div>
-            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reg_doc_input">Nome do aluno:</label>
+                    </div>
 
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="reg_doc_input">Nome do aluno:</label>
-                </div>
-
-                <div class="col-75">
-                    <input type=text id="reg_doc_input" placeholder="Digite o nome do aluno">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="reg_doc_input">Documendo do aluno:</label>
+                    <div class="col-75">
+                        <input type=text id="reg_doc_input" placeholder="Digite o nome do aluno">
+                    </div>
                 </div>
 
-                <div class="col-75">
-                    <input type=text id="reg_doc_input" placeholder="Digite o CPF do aluno">
-                </div>
-            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reg_doc_input">Documendo do aluno:</label>
+                    </div>
 
+                    <div class="col-75">
+                        <input type=text id="reg_doc_input" placeholder="Digite o CPF do aluno">
+                    </div>
+                </div>
+
+                <button id="add_dependent_btn" onclick="addDependent()">Adicionar</button>
+
+            </fieldset>
 
             <!-- Submit Button -->
-            <input type="submit" value="submit" id="submit_button">
+            <input type="submit" value="Salvar" id="submit_button">
 
         </form>
 

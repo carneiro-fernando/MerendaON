@@ -53,7 +53,10 @@ body {
   overflow: hidden;
 }
 
+
+
 .row:after {
+  height: 0.4em;
   content: "";
   display: table;
   clear: both;
@@ -61,13 +64,13 @@ body {
 
 .col-25 {
   float: left;
-  width: 25%;
+  width: 35%;
   margin-top: 6px;
 }
 
 .col-75 {
   float: left;
-  width: 75%;
+  width: 65%;
   margin-top: 6px;
 }
 
@@ -188,4 +191,27 @@ input[type="submit"] {
     display: block;
     text-align: left;
   }
+}
+
+/* Register Page */
+
+fieldset{
+  margin: 3% 0%;
+  border: solid;
+  padding: 10px;
+  border-width: 1px;
+  border-color: #aaa;
+  border-radius: 10px;
+}
+
+#add_dependent_btn {
+  float: right;
+  background-color: blueviolet;
+  border : none;
+  margin: 1.5% 0% 4% 0%;
+  color: white;
+  padding: 2% 10%;
+  border-radius: 15px;
+  cursor: pointer;
+  float: right;
 }
