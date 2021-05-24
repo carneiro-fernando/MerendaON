@@ -41,9 +41,44 @@
         </a>
     </div>
 
-    <div class="registerButtons">
-        <button src="registerParent">Cadastrar Responsável</button>
-        <button src="registerChild">Cadastrar Aluno</button>
+
+    <!-- Form -->
+    <div class="form">
+        <form>
+            <span>
+                <h1>Cadastro de responsável:</h1>
+            </span>
+
+            <fieldset class="responsible">
+                <legend>Cadastrar responsável</legend>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reg_name_input">Nome do responsável:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type=text id="reg_name_input" placeholder="Digite o nome do responsável">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reg_doc_input">Documento:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type=text id="reg_doc_input" placeholder="Digite o CPF do responsável">
+                    </div>
+                </div>
+            </fieldset>
+
+<!-- Cadastrar aluno -->
+
+            <!-- Submit Button -->
+            <input type="submit" value="Salvar" id="submit_button">
+
+        </form>
+
     </div>
 
 </body>

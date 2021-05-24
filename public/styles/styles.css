@@ -53,8 +53,6 @@ body {
   overflow: hidden;
 }
 
-
-
 .row:after {
   height: 0.4em;
   content: "";
@@ -213,4 +211,34 @@ fieldset{
   border-radius: 15px;
   cursor: pointer;
   float: right;
+}
+
+.registerButtons{
+  display: block;
+  text-align: center;
+}
+
+.registerButtons button {
+  display: inline-block;
+  width: 25%;
+  padding: 2%;
+  margin:5%;
+  color: white;
+  background-color: #04aa6d;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #aaa;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .registerButtons{
+    margin-top: 20%;
+  }
+  .registerButtons button{
+    width: 100%;
+    padding: 5%;
+    margin-top: 5%;
+  }
 }

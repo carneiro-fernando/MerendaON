@@ -35,6 +35,7 @@ function addDependent () {
   var newDiv = document.createElement("div"); 
   // and give it some content 
   var newContent = document.createTextNode("Hi that works!"); 
+  
   // add the text node to the newly created div
   newDiv.appendChild(newContent);  
 
