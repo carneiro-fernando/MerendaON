@@ -53,6 +53,10 @@ body {
   overflow: hidden;
 }
 
+.regParentForm {
+  margin: 0% 20%;
+}
+
 .row:after {
   height: 0.4em;
   content: "";

@@ -1,11 +1,8 @@
+// function to enable ad disable checkbox
 function someone_else_func() {
-  // Get the checkbox
+
   var checkBox = document.getElementById("someone_else_checkbox");
-
-  // Get the output div
   var div_someone_else = document.getElementById("someone_else");
-
-  // If the checkbox is checked, display the output div
   if (checkBox.checked == true) {
     div_someone_else.style.display = "block";
   } else {
@@ -15,12 +12,15 @@ function someone_else_func() {
 
 function topNav_resize() {
   var x = document.getElementById("myTopnav");
+  console.log("este é o conteudo da variavel x: " +x)
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
 }
+
+
 
 // Apartir daqui não foi implementado
 // Link do tutorial:https://www.codegrepper.com/code-examples/javascript/javascript+create+new+div+html+element+dynamically

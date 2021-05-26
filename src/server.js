@@ -4,8 +4,10 @@ const port = 3000;
 const routes = require("./routes");
 
 //Enable static routes
-app.use(express.static("public"));
+app.use(express.static('public'));
 app.use(express.static ('components'));
+app.use(express.static ('controller'));
+
 
 // Use the router file
 app.use(routes)

@@ -8,7 +8,9 @@
     <title>Cadastro</title>
     <link href="/styles/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="../controller/controller.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+    <script src="header.js" type="text/javascript" defer></script>
+
 </head>
 
 <body>
@@ -20,8 +22,8 @@
 
 
         <div class="registerButtons">
-            <button src="/registerParent">Cadastrar Responsável</button>
-            <button src="/registerChild">Cadastrar Aluno</button>
+            <button onclick="document.location='/registerChild'">Cadastrar Aluno</button>
+            <button onclick="document.location='none'">Consultar Aluno</button>
         </div>
     </main>
 </body>
