@@ -13,72 +13,50 @@
 
 <body>
 
-    <!-- Logo, name and Profile -->
-    <div class="index_header">
-        <img id="logo_img"
-            src="https://cdn0.iconfinder.com/data/icons/coffee-shop-44/64/breakfast_lunch_food_meal-512.png"
-            alt="MerendaON icon">
+    <!-- Header & Navbar -->
+    <header-component></header-component>
 
-        <div class="index_header_text">
-            <span style="font-weight: normal;">Merenda</span>
-            <span style="color: chartreuse;">On</span>
+    <main>
+
+        <!-- Form -->
+        <div class="form">
+            <form>
+                <span>
+                    <h1>Cadastro de responsável:</h1>
+                </span>
+
+                <fieldset class="responsible">
+                    <legend>Cadastrar responsável</legend>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="reg_name_input">Nome do responsável:</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type=text id="reg_name_input" placeholder="Digite o nome do responsável">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="reg_doc_input">Documento:</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type=text id="reg_doc_input" placeholder="Digite o CPF do responsável">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Cadastrar aluno -->
+
+                <!-- Submit Button -->
+                <input type="submit" value="Salvar" id="submit_button">
+
+            </form>
+
         </div>
-
-        <div style="flex: 1;">
-            <img id="profile_img" src="https://github.com/carneiro-fernando.png" alt="User profile image">
-        </div>
-    </div>
-
-
-    <!-- Navigation bar -->
-    <div class="topnav" id="myTopnav">
-        <a href="/" class="active">Início</a>
-        <a href="#news">Cadastro</a>
-        <a href="#contact">Consulta</a>
-        <a href="#about">Cozinha</a>
-        <a href="javascript:void(0);" class="icon" onclick="topNav_resize()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-
-
-    <!-- Form -->
-    <div class="form">
-        <form>
-            <span>
-                <h1>Cadastro de responsável:</h1>
-            </span>
-
-            <fieldset class="responsible">
-                <legend>Cadastrar responsável</legend>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="reg_name_input">Nome do responsável:</label>
-                    </div>
-
-                    <div class="col-75">
-                        <input type=text id="reg_name_input" placeholder="Digite o nome do responsável">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="reg_doc_input">Documento:</label>
-                    </div>
-
-                    <div class="col-75">
-                        <input type=text id="reg_doc_input" placeholder="Digite o CPF do responsável">
-                    </div>
-                </div>
-            </fieldset>
-
-<!-- Cadastrar aluno -->
-
-            <!-- Submit Button -->
-            <input type="submit" value="Salvar" id="submit_button">
-
-        </form>
-
-    </div>
-
+    </main>
 </body>
+
+</html>
