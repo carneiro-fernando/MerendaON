@@ -10,6 +10,7 @@ function someone_else_func() {
   }
 }
 
+// function to resize navbar (responsiveness)
 function topNav_resize() {
   var x = document.getElementById("myTopnav");
   console.log("este é o conteudo da variavel x: " +x)
@@ -22,24 +23,26 @@ function topNav_resize() {
 
 
 
+//Implementing
+
 // Apartir daqui não foi implementado
 // Link do tutorial:https://www.codegrepper.com/code-examples/javascript/javascript+create+new+div+html+element+dynamically
 
-var newDiv = document.createElement("div");
-document.body.appendChild(newDiv);
+// var newDiv = document.createElement("div");
+// document.body.appendChild(newDiv);
 
-document.body.onload = addDependent;
+// document.body.onload = addDependent;
 
-function addDependent () { 
-  // create a new div element 
-  var newDiv = document.createElement("div"); 
-  // and give it some content 
-  var newContent = document.createTextNode("Hi that works!"); 
+// function addDependent () { 
+//   // create a new div element 
+//   var newDiv = document.createElement("div"); 
+//   // and give it some content 
+//   var newContent = document.createTextNode("Hi that works!"); 
   
-  // add the text node to the newly created div
-  newDiv.appendChild(newContent);  
+//   // add the text node to the newly created div
+//   newDiv.appendChild(newContent);  
 
-  // add the newly created element and its content into the DOM 
-  var currentDiv = document.getElementById("div1"); 
-  document.body.insertBefore(newDiv, currentDiv); 
-}
+//   // add the newly created element and its content into the DOM 
+//   var currentDiv = document.getElementById("div1"); 
+//   document.body.insertBefore(newDiv, currentDiv); 
+// }

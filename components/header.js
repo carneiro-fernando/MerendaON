@@ -27,7 +27,7 @@ headerTemplate.innerHTML = `
         <a href="/student">Aluno</a>
         <a href="/parent">Responsável</a>
         <a href="#none">Merenda</a>
-        <a href="javascript:void(0);" class="icon" onclick="topNav_resize()">
+        <a href="javascript:void(0);" id="navBtn" class="icon">
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -50,3 +50,13 @@ class Header extends HTMLElement {
 }
 
 customElements.define("header-component", Header);
+
+var topnav = document.getElementById("myTopnav");
+var topnavButton = document.getElementById("navBtn");
+
+function topNavResize() {
+  console.log("I reach here!");
+  topnav.classList.toggle("responsive");
+}
+
+topnavButton.addEventListener("click", topNavResize);
