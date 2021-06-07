@@ -11,15 +11,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="controller.js"></script>
     <script src="header.js" type="text/javascript" defer></script>
-
 </head>
 
 <body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="/" class="active">Retirada</a>
+        <a href="/student">Aluno</a>
+        <a href="/parent">Responsável</a>
+        <a href="#none">Merenda</a>
+        <a href="javascript:void(0);" id="navBtn" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <!-- Header & Navbar -->
     <header-component></header-component>
 
     <main>
+
         <!-- Form -->
         <div class="form">
             <form>
@@ -27,37 +37,33 @@
                     <h1>Cadastro do Aluno:</h1>
                 </span>
 
-        <fieldset class="dependent">
-            <legend>Cadastrar aluno</legend>
+                <fieldset class="dependent">
+                    <legend>Cadastrar aluno</legend>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="reg_doc_input">Nome do aluno:</label>
-                </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="reg_doc_input">Nome do aluno:</label>
+                        </div>
 
-                <div class="col-75">
-                    <input type=text id="reg_doc_input" placeholder="Digite o nome do aluno">
-                </div>
-            </div>
+                        <div class="col-75">
+                            <input type=text id="reg_doc_input" placeholder="Digite o nome do aluno">
+                        </div>
+                    </div>
 
-            <div class="row">
-                <div class="col-25">
-                    <label for="reg_doc_input">Documendo do aluno:</label>
-                </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="reg_doc_input">Documendo do aluno:</label>
+                        </div>
 
-                <div class="col-75">
-                    <input type=text id="reg_doc_input" placeholder="Digite o CPF do aluno">
-                </div>
-            </div>
+                        <div class="col-75">
+                            <input type=text id="reg_doc_input" placeholder="Digite o CPF do aluno">
+                        </div>
+                    </div>
 
-            <button id="add_dependent_btn" onclick="addDependent()">Adicionar</button>
+                    <input type="submit" value="Salvar" id="submit_button">
+                </fieldset>
 
-        </fieldset>
-
-        <!-- Submit Button -->
-        <input type="submit" value="Salvar" id="submit_button">
-
-        </form>
+            </form>
         </div>
 
         <script src="./header.js" type="text/javascript" defer></script>

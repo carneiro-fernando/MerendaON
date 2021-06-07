@@ -28,11 +28,34 @@
     <header-component></header-component>
 
     <main>
-        <div class="registerButtons">
-            <button onclick="document.location='/registerParent'">Cadastrar Responsável</button>
-            <button onclick="document.location='/consultParent'">Consultar Responsável</button>
-        </div>
-    </main>
-</body>
+        <!-- Table -->
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Escola</th>
+                    <th>Responsável</th>
+                    <th>Ano Letivo</th>
+                    <th>Documento</th>
+                </tr>
+            </thead>
 
-</html>
+            <tbody>
+                <tr>
+                    <td>Fulaninho</td>
+                    <td>EMEI Maria Antonia</td>
+                    <td>Fulano</td>
+                    <td>Primeiro ano</td>
+                    <td>123.456.789-0</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Ciclaninho</td>
+                    <td>EMEF Natan Pires</td>
+                    <td>Ciclano</td>
+                    <td>Quarto ano</td>
+                    <td>321.456.789-0</td>
+                </tr>
+              
+            </tbody>
+        </table>
+    </main>

@@ -1,4 +1,4 @@
-const headerTemplate = document.createElement("template");
+var headerTemplate = document.createElement("template");
 headerTemplate.innerHTML = `
         <script src="header.js" type="text/javascript" defer></script>
         <link href="/styles/styles.css" rel="stylesheet">
@@ -22,15 +22,7 @@ headerTemplate.innerHTML = `
 
    
     <!-- Navigation bar -->
-    <div class="topnav" id="myTopnav">
-        <a href="/" class="active">Retirada</a>
-        <a href="/student">Aluno</a>
-        <a href="/parent">Responsável</a>
-        <a href="#none">Merenda</a>
-        <a href="javascript:void(0);" id="navBtn" class="icon">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+    
 
       <!-- Resize TopNav -->
       
@@ -39,17 +31,18 @@ headerTemplate.innerHTML = `
       `;
 
 class Header extends HTMLElement {
-  constructor() {
+  constructor(){
     super();
   }
 
-  connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: "open" });
-    shadowRoot.appendChild(headerTemplate.content);
+  connectedCallback(){
+    this.attachShadow({mode:"open"}).append(headerTemplate.content);
   }
 }
 
 customElements.define("header-component", Header);
+
+
 
 var topnav = document.getElementById("myTopnav");
 var topnavButton = document.getElementById("navBtn");

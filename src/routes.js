@@ -8,6 +8,8 @@ router.get("/student", (req, res) => {res.sendFile(path.join(__dirname, baseUrl,
 router.get("/parent", (req, res) => {res.sendFile(path.join(__dirname, baseUrl, 'parent.html'))});
 router.get("/registerParent", (req, res) => {res.sendFile(path.join(__dirname, baseUrl, 'registerParent.html'))});
 router.get("/registerChild", (req, res) => {res.sendFile(path.join(__dirname, baseUrl, 'registerChild.html'))});
+router.get("/consultParent", (req, res) => {res.sendFile(path.join(__dirname, baseUrl, 'consultParent.html'))});
+router.get("/consultChild", (req, res) => {res.sendFile(path.join(__dirname, baseUrl, 'consultChild.html'))});
 
 
 

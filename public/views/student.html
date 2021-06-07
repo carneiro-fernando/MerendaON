@@ -15,15 +15,22 @@
 
 <body>
 
+    <div class="topnav" id="myTopnav">
+        <a href="/" class="active">Retirada</a>
+        <a href="/student">Aluno</a>
+        <a href="/parent">Responsável</a>
+        <a href="#none">Merenda</a>
+        <a href="javascript:void(0);" id="navBtn" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <!-- Header & Navbar -->
     <header-component></header-component>
 
     <main>
-
-
         <div class="registerButtons">
             <button onclick="document.location='/registerChild'">Cadastrar Aluno</button>
-            <button onclick="document.location='none'">Consultar Aluno</button>
+            <button onclick="document.location='/consultChild'">Consultar Aluno</button>
         </div>
     </main>
 </body>

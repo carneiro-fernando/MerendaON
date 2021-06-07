@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="controller.js"></script>
+    <script src="header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="/" class="active">Retirada</a>
+        <a href="/student">Aluno</a>
+        <a href="/parent">Responsável</a>
+        <a href="#none">Merenda</a>
+        <a href="javascript:void(0);" id="navBtn" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Header & Navbar -->
+    <header-component></header-component>
+
+    <main>
+
+        <!-- Table -->
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Local retirada</th>
+                    <th>Dependentes</th>
+                    <th>Última retirada</th>
+                    <th>Documento</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Fulano</td>
+                    <td>EMEI Maria Antonia</td>
+                    <td>Fulaninho, Fulaninha</td>
+                    <td>07/06/2021</td>
+                    <td>123.456.789-0</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Clclano</td>
+                    <td>EMEF Natan Pires</td>
+                    <td>Clclaninho, Ciclaninha</td>
+                    <td>01/06/2021</td>
+                    <td>321.456.789-0</td>
+                </tr>
+                <!-- and so on... -->
+            </tbody>
+        </table>
+    </main>
